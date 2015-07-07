@@ -1,0 +1,7 @@
+<h1>Current Conditions:</h1>
+
+<% if @temp == -9999 %>
+	<p><%= params["city"] %> was not found</p>
+<% else %>
+	<p>It is currently <%= @temp %> degrees in <%= params["city"] %></p>
+<% end %>
